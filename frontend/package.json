@@ -1,0 +1,52 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.13.2",
+    "framer-motion": "^12.23.25",
+    "moment": "^2.30.1",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.10.1",
+    "react-scripts": "5.0.1",
+    "recharts": "^3.5.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:stg1": "REACT_APP_ENV=stg1 npm run build",
+    "build:pod2": "REACT_APP_ENV=pod2 npm run build",
+    "build:preprod": "REACT_APP_ENV=preprod npm run build",
+    "build:prod_ind": "REACT_APP_ENV=prod_ind npm run build",
+    "build:prod_us": "REACT_APP_ENV=prod_us npm run build",
+    "build:prod_eu": "REACT_APP_ENV=prod_eu npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
